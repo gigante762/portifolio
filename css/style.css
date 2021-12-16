@@ -1,0 +1,58 @@
+
+.header-divimg {
+    border-radius: 10px 10px 0px 0px;
+}
+.header-bg-img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.divpicture{
+    height: 60px;
+}
+.header-picture {
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    top: -100px;
+    width: 150px;
+    left: 5px;
+}
+
+.sobre{
+    font-size: 0.9rem;
+}
+
+.expreriencia-item{
+    font-size: 0.9rem;
+    border-bottom: 1px solid #dcdcdc9e;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.expreriencia-item img{
+    width:48px;
+    height:48px;
+}
+
+.expreriencia-item-title{
+    font-size: 1.0rem;
+}
+
+.licensasecertificados-item{
+    font-size: 0.9rem;
+    border-bottom: 1px solid #dcdcdc9e;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.licensasecertificados-item img{
+    width:48px;
+   /*  height:48px; */
+}
+
+.licensasecertificados-item-title{
+    font-size: 1.0rem;
+}
