@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="print" href="css/print.css" />
     <title>Kevin Souza</title>
 </head>
 
@@ -33,103 +34,77 @@
     </nav>
 
     <!-- Main -->
-    <div class='container'>
-
+    <div class='container divwrap'>
         <div class="header mt-3 rounded">
             <img class='header-bg-img' src="assets/gameoflife.jpg" alt="Imagem de fundo, game of life">
         </div>
 
-        <div class='border rounded'>
-
+        <div class='border rounded divpDados'>
             <div class="p-3 divpicture">
                 <img class='header-picture' src="assets/mypicture.jpg" alt="Foto Kevin Souza">
             </div>
-            <div class='p-3'>
-                <h3><b>Kevin Souza</b></h3>
-                <p class='p-0 m-0'>Desenvolvedor Web Fullstack - PHP - Jr e Instrutor de Tecnologia</p>
-                <p class='text-muted fs-6'>Nova Friburgo, Rio de Janeiro, Brasil</p>
-                <hr>
-                <h6><b>Contato:</b></h6>
-                <p>Email: igantekevin@hotmail.com</p>
-                <p><a target="_blank" class='link-dark mt-3' href="https://github.com/gigante762">Github :
-                        https://github.com/gigante762</a></p>
+            <div class='p-3 divWrapDados'>
+                <div class="row hideAtPrint">
+                    <div class="col-9">
+                        <h3 class = 'nome'><b>Kevin Souza</b></h3>
+                    </div>
+                    <div class="col-3">
+                        <button class = 'btn btn-secondary' onclick="print()">Gerar pfd</button>
+                    </div>
+                </div>
+
+                <h3 class = 'nome hidePrint hrPrint'><b>Kevin Souza</b></h3>
+                
+                <div class="pDados">
+                    <p>Brasileiro, solteiro, 22 anos.</p>
+                    <p>Perissê, Nova Friburgo – RJ.</p>
+                    <!-- <p>Tel: (xx) xxxxx-xxxx</p> -->
+                    <p>E-mail: igantekevin@hotmail.com</p>
+                    <p>
+                        <a class = 'link-dark' href="https://www.linkedin.com/in/kevin-rodrigues-8b7ba11a5/">LinkedIn: https://www.linkedin.com/in/kevin-rodrigues-8b7ba11a5/</a> 
+                    </p>
+                    <hr class= 'hrPrint'>
+                </div>
+
+                <div class="pDadosWeb">
+                    <p class='p-0 m-0'>Desenvolvedor Web Fullstack - PHP - Jr e Instrutor de Tecnologia</p>
+                    <p class='text-muted fs-6'>Nova Friburgo, Rio de Janeiro, Brasil</p>
+                    <hr>
+                    <h6><b>Contato:</b></h6>
+                    <p>Email: igantekevin@hotmail.com</p>
+                    <p><a target="_blank" class='link-dark mt-3' href="https://github.com/gigante762">Github :
+                            https://github.com/gigante762</a></p>
+                </div>
+
             </div>
         </div>
 
 
         <div class="sobre border rounded mt-3 p-3">
-            <h3><b>Sobre</b></h3>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas com grande vontade de me tornar professor de
-                Computação. Tive a oportunidade de cursar o CS50 Harvard 2020 essa sem dúvida foi uma experiência
-                marcante para mim que me fez ver onde quero dedicar meus esforços na vida.</p>
+            <h3 class='titletopic'><b>Apresentação</b></h3>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas. Tive a oportunidade de cursar o CS50 Harvard
+                2020 essa sem dúvida foi uma experiência marcante para mim que me fez ver onde quero dedicar meus
+                esforços na vida.
+                </p>
 
-            <p>Tenho conhecimento de programação em Python, Javascript e PHP. Para desenvolver projetos geralmente uso
-                Vuejs, Boostrap e Laravel. Cusei Edificações no Senai e pude fazer uso de ferramentas como Autocad,
-                Google Earth e Sketchup. Sempre busco aprender novas ferramentas e tecnologias como computação em nuvem,
-                inteligência artificial e conteúdos ligados a ciência da computação.</p>
+            <p>Tenho conhecimento de programação em Python, Javascript e PHP. Para desenvolver projetos geralmente
+                uso Vuejs, Boostrap e Laravel. Cusei Edificações no Senai e pude fazer uso de ferramentas como
+                Autocad, Google Earth e Sketchup. Sempre busco aprender novas ferramentas e tecnologias como
+                computação em nuvem, inteligência artificial e conteúdos ligados à ciência da computação.
+                </p>
 
-            <p>Sou apaixonado por tecnologia e docência, busco me integrar com comunidades que promovem o ensino da
-                computação para todas as pessoas como o Scratch, Code.org, Code Brasil, Processing, Khan Academy e todo
-                e qualquer projeto social que vise disseminar conhecimento.</p>
+            <p>Sou apaixonado por tecnologia e docência, busco me integrar com comunidades que promovem o ensino
+                da computação para todas as pessoas como o Scratch, Code.org, Code Brasil, Processing, Khan
+                Academy e todo e qualquer projeto social que vise disseminar conhecimento.</p>
 
-            <p><a target="_blank" class='link-dark' href="https://mundozeroum.blogspot.com/">Blog:
+            <p><a target="_blank" class='link-dark hidePrint' href="https://mundozeroum.blogspot.com/">Blog:
                     https://mundozeroum.blogspot.com/</a></p>
-        </div>
 
-        <div class="border rounded mt-3 p-3">
-            <h3><b>Experiência</b></h3>
-            <div class="expreriencia-item mt-2">
-                <div class="m-3">
-                    <img src="assets/emptyCompany.jpg" alt="Imagem que representa um logo de empresa qualquer">
-                </div>
-                <div class="">
-                    <div class='expreriencia-item-title'><b>Ajudante de Tecelagem</b></div>
-                    <div>RJTextil · Tempo integralRJTextil · Tempo integral</div>
-                    <div class='text-muted fs-6'>mar de 2021 - abr de 2021 · 2 meses</div>
-                    <div class='text-muted fs-6 mb-3'> Nova Friburgo, Rio de Janeiro, Brasil</div>
-                </div>
-            </div>
-            <div class="expreriencia-item mt-2">
-                <div class="m-3">
-                    <img src="assets/emptyCompany.jpg" alt="Imagem que representa um logo de empresa qualquer">
-                </div>
-                <div class="">
-
-                    <div class='expreriencia-item-title'><b>Zelador</b></div>
-                    <div>Condomínio Parque das Aleias · Meio período</div>
-                    <div class='text-muted fs-6'>mar de 2020 - jul de 2020 · 5 meses</div>
-                    <div class='text-muted fs-6 mb-3'>Nova Friburgo, Rio de Janeiro, Brasil</div>
-                </div>
-            </div>
-            <div class="expreriencia-item mt-2">
-                <div class="m-3">
-                    <img src="assets/agualogo.jpg" alt="Imagem logo da Aguás de Nova Friburgo">
-                </div>
-                <div class="">
-                    <div class='expreriencia-item-title'><b>Jovem Aprendiz - Departamento de Recursos Humanos</b></div>
-                    <div>Grupo Águas do Brasil · Aprendiz</div>
-                    <div class='text-muted fs-6'>mar de 2018 - set de 2019 · 1 ano 7 meses</div>
-                    <div class='text-muted fs-6 mb-3'> Nova Friburgo, Rio de Janeiro, Brasil</div>
-                    <p>Formação como Rotinas Administrativas.</p>
-                </div>
-            </div>
-            <div class="expreriencia-item mt-2">
-                <div class="m-3">
-                    <img src="assets/emptyCompany.jpg" alt="Imagem que representa um logo de empresa qualquer">
-                </div>
-                <div class="">
-                    <div class='expreriencia-item-title'><b>Jovem Aprendiz - Auxiliar de Obras e Edificações</b></div>
-                    <div>Engeform Construções e Comércio Ltda. · Aprendiz</div>
-                    <div class='text-muted fs-6'>jul de 2016 - set de 2017 · 1 ano 3 mese</div>
-                    <div class='text-muted fs-6 mb-3'>Nova Friburgo, Rio de Janeiro, Brasil</div>
-                    <p>Formação como Auxiliar de Obras e Edificações.</p>
-                </div>
-            </div>
-
+            <hr class='hrPrint'>
         </div>
 
         <div class="fomarcaoacademica border rounded mt-3 p-3">
-            <h3><b>Formação acadêmica</b></h3>
+            <h3 class='titletopic' ><b>Formação acadêmica</b></h3>
             <div class="expreriencia-item mt-2">
                 <div class="m-3">
                     <img src="assets/ufflogo.jpg" alt="Logo da Universidade Federal Fluminense">
@@ -137,7 +112,13 @@
                 <div class="">
                     <div class='expreriencia-item-title'><b>Universidade Federal Fluminense</b></div>
                     <div>Licenciatura em Computação</div>
-                    <div class='text-muted fs-6'>2021 - 2026</div>
+                    <ul>
+                        <li>2° Perído</li>
+                        <li>Previsão de término 2026</li>
+                    </ul>
+                    <p>Durante o curso tenho voltado à atenção em assuntos relacionados a computação gráfica, estrutura de dados
+                        e pedagogia.
+                        </p>
                 </div>
             </div>
             <div class="expreriencia-item mt-2">
@@ -147,16 +128,145 @@
                 <div class="">
                     <div class='expreriencia-item-title'><b>Unicsul</b></div>
                     <div>Análise e Desenvolvimento de Sistemas</div>
-                    <div class='text-muted fs-6'>2019 - 2022</div>
+                    <ul>
+                        <li>4° Perído</li>
+                        <li>Previsão de término 2022</li>
+                    </ul>
+                    <p>Ao ingressar no curso tinha como objetivo me expor as mais variadas áreas de TI e suas tecnologias. Assim
+                        conheci um pouco de muitos tópicos, dentre eles: Tecnologias Web (html,css, e js); Python e automação de
+                        tarefas com Selênium, Pyautogui e programas para CLI; Java para o estudo de POO; Arduino e eletrônica;
+                        Excel juntamente com fundamentos de DB, Banco de dados como Oracle, MySql(MariaDB) e Postgre;
+                        Desenvolvimento Mobile usando React Native; Front-end com Boostrap, React, Vue; Back-end com
+                        PHP(CodeIgniter 3 e 4, Slim e Laravel 6 e 8), Python (Flask) e Nodejs(express);Design Patterns e Clean
+                        Code;Computação em Nuvem com IMBCloud e um pouco de IA com IBM Watson e treinamento de
+                        modelos para classificação de imagens; Curso de computação forense; Tecnologias educacionais tais como:
+                        p5.js, Minecreft Education, processing, Scratch, Roblox, Code.org, App Inventor e Code Brasil; Jogos em 2D
+                        com p5js. Ainda busco experimentar muitas áreas, no entanto acabei focando mais nas tecnologias web.</p>
                     <p><a target="_blank" class='link-dark mt-3' href="https://github.com/gigante762">Github :
                             https://github.com/gigante762</a></p>
                 </div>
             </div>
-
+            <hr class= 'hrPrint'>
+            <br class='brSpace-200'>
+            <br class='brSpace-100'>
+            <br class='brSpace-50'>
+            
         </div>
 
+        <div class="experiencia border rounded mt-3 p-3">
+            <h3 class='titletopic'><b>Experiência</b></h3>
+
+            <div class="mt-2">
+                <div class="expreriencia-item">
+                    <div class="m-3">
+                        <img src="assets/emptyCompany.jpg" alt="Imagem que representa um logo de empresa qualquer">
+                    </div>
+
+                    <div class="">
+                        <div><b>RJTextil</b></div>
+                        <div class='expreriencia-item-title'><b>Ajudante de Tecelagem</b></div>
+                        <div class='text-muted fs-6'>mar de 2021 - abr de 2021 · 2 meses</div>
+                        <div class='text-muted fs-6 mb-3 hideAtPrint'> Nova Friburgo, Rio de Janeiro, Brasil</div>
+                    </div>
+                </div>
+               
+                <p class = 'experiencia-desc'>Realizava a análise visual, física e correção dos artigos, bem como a manutenção dos equipamentos para
+                    mantê-los funcionando perfeitamente. Auxiliava em processos mais complexos de tecelagem como
+                    mudança de desenhos e também estudava seu funcionamento para ser capaz de melhor desempenhar o
+                    meu papel.</p>
+                
+            </div>
+
+            <div class="mt-2">
+                <div class="expreriencia-item">
+                    <div class="m-3">
+                        <img src="assets/emptyCompany.jpg" alt="Imagem que representa um logo de empresa qualquer">
+                    </div>
+
+                    <div>
+                        <div><b>Condomínio Parque das Aleias</b></div>
+                        <div class='expreriencia-item-title'><b>Zelador</b></div>
+                        <div class='text-muted fs-6'>mar de 2020 - jul de 2020 · 5 meses</div>
+                        <div class='text-muted fs-6 mb-3 hideAtPrint'>Nova Friburgo, Rio de Janeiro, Brasil</div>
+                    </div>
+                </div>
+                
+                <p class='experiencia-desc'>Zelava pelo ambiente do condomínio e realizava coleta de resíduos, limpeza de ambiente de piscina,
+                    jardinagem, o que envolvia cortar grama, podar arbustos e aparar as plantas. Manter as ruas internas
+                    sempre apresentáveis, verificar o nível do reservatório de água e também a dosagem de cloro
+                    recomendado. Encaminhar as correspondências aos moradores e porventura, realizar alguma tarefa
+                    solicitada pelo(a) síndico(a).
+                    </p>
+    
+            </div>
+
+            <div class="mt-2">
+                <div class="expreriencia-item">
+                    <div class="m-3">
+                        <img src="assets/agualogo.jpg" alt="Imagem logo da Aguás de Nova Friburgo">
+                    </div>
+
+                    <div class="">
+                        <div><b>Grupo Águas do Brasil</b></div>
+                        <div class='expreriencia-item-title'><b>Jovem Aprendiz - Departamento de Recursos Humanos</b></div>
+                        <div class='text-muted fs-6'>mar de 2018 - set de 2019 · 1 ano 7 meses</div>
+                        <div class='text-muted fs-6 mb-3 hideAtPrint'> Nova Friburgo, Rio de Janeiro, Brasil</div>
+                    </div>
+                </div>  
+                <p>Formação como Rotinas Administrativas.</p>
+
+                <p class='experiencia-desc'>Atuava no Departamento de RH por organizar os arquivos de documentos, currículos, atender ligações e
+                    encaminhar recados, atender funcionários e sanar suas solicitações segundo o possível, realizar a
+                    confecção de quadros informativos internos, auxiliar nos processos de recrutamento e realizar qualquer
+                    outra demanda do departamento. Por conta da aptidão na área de informática auxiliava outros
+                    departamentos com processos de automação de tarefas e conhecimentos de informática (Excel,
+                    PowerPoint e Word).
+                    </p>
+            </div>
+
+            <div class="mt-2">
+                <div class="expreriencia-item ">
+                    <div class="m-3">
+                        <img src="assets/emptyCompany.jpg" alt="Imagem que representa um logo de empresa qualquer">
+                    </div>
+
+                    <div class="">
+                        <div><b>Engeform Construções e Comércio Ltda</b></div>
+                        <div class='expreriencia-item-title'><b>Jovem Aprendiz - Auxiliar de Obras e Edificações</b></div>
+                        <div class='text-muted fs-6'>jul de 2016 - set de 2017 · 1 ano 3 mese</div>
+                        <div class='text-muted fs-6 mb-3 hideAtPrint'>Nova Friburgo, Rio de Janeiro, Brasil</div>
+                    </div>
+                </div>
+
+                <p>Formação como Auxiliar de Obras e Edificações.</p>
+
+                <p class = 'experiencia-desc' >Curso realizado no Senai onde tive quase dois anos de aulas, podemos compreender de uma forma geral
+                o funcionamento do processo de edificações desde a sua: idealização, confecção do projeto segundo
+                aspectos arquitetônicos, cálculos de materiais, dimensionamento e projeto elétrico, gerenciamento de
+                prazos, gerenciamento de qualidade, segurança, alguns conceito de engenharia civil, normas e leis da
+                construção, desenhos técnico, confecção de plantas baixas à mão, realização de plantas usando o
+                AutoCad, elaboração de projeto em 3D usando Sketchup e, indo um pouco mais além de própria
+                iniciativa, foto realidade com o Kerkythea, o que chamou a atenção de muitos professores. Tendo em vista
+                que o Senai da região havia sido premiado como um FabLab realizei também um curso no FabLab no
+                qual aprendemos sobre: Router CNC(programação e funcionamento), Arduino(Eletrônica básica), corte à
+                laser (projeto e uso), projeto de impressão 3D e confecção de projetos em 3D.</p>
+                
+            </div>
+            <hr class= 'hrPrint'>
+        </div>
+
+        
+        
+        <br class='brSpace-200'>
+        <br class='brSpace-200'>
+        <br class='brSpace-500'>
+        <br class='brSpace-50'>
+        <br class='brSpace-50'>
+        <br class='brSpace-50'>
+            
+
         <div class="licensasecertificados border rounded mt-3 p-3">
-            <h3><b>Licenças e certificados</b></h3>
+            <h3 class='titletopic'><b>Cursos</b></h3>
 
             <div class="licensasecertificados-item mt-2">
                 <div class="m-3">
@@ -165,7 +275,14 @@
                 <div class="">
                     <div class='licensasecertificados-item-title'><b>CS50 Harvard 2020</b></div>
                     <div>Harvard University</div>
-                    <div class='text-muted fs-6'>Emitido abr de 2021</div>
+                    <p>Introdução às faculdades intelectuais da ciência da computação e à arte da programação. Este curso
+                        ensina os alunos a pensar algoritmicamente e resolver problemas de forma eficiente. Os tópicos incluem
+                        abstração, algoritmos, estruturas de dados, encapsulamento, gerenciamento de recursos, segurança e
+                        engenharia de software. As linguagens incluem C, Python e SQL, além da escolha dos alunos de: HTML,
+                        CSS e JavaScript (para desenvolvimento web); Java ou Swift (para desenvolvimento de aplicativos
+                        móveis); ou Lua (para desenvolvimento de jogos). Conjuntos de problemas inspirados nas artes,
+                        humanidades, ciências sociais e ciências.
+                        </p>
                     <a target="_blank" href="https://cs50.harvard.edu/certificates/ab86a4ce-7d46-474c-8eba-55036788332f"
                         class="btn btn-outline-secondary rounded my-3"><b>Ver credencial</b></a>
                 </div>
@@ -178,10 +295,25 @@
                 <div class="">
                     <div class='licensasecertificados-item-title'><b>Web Moderno</b></div>
                     <div>COD3R</div>
-                    <div class='text-muted fs-6'>Emitido abr de 2021</div>
+                    
                     <p>Projetos, Javascript, Vue, HTML, CSS, jQuery, Bootstrap Webpack,
                         Gulp MySQL.</p>
                     <a target="_blank" href="https://www.udemy.com/course/curso-web/"
+                        class="btn btn-outline-secondary rounded my-3"><b>Ver credencial</b></a>
+                </div>
+            </div>
+
+            <div class="licensasecertificados-item mt-2">
+                <div class="m-3">
+                    <img src="assets/rocketseatlogo.jpg" alt="Logo da Rocketseat">
+                </div>
+                <div class="">
+                    <div class='licensasecertificados-item-title'><b>Semana Omnistack</b></div>
+                    <div>Rocketseat</div>
+                    
+                    <p>Semana OmniStack 11 na data de 29.03.2020 e dominou os conceitos básicos de Node.js, ReactJS e
+                        React Native, além das atividades práticas</p>
+                    <a target="_blank" href="https://old.especializati.com.br/certificado/BCRHp6Zc"
                         class="btn btn-outline-secondary rounded my-3"><b>Ver credencial</b></a>
                 </div>
             </div>
@@ -193,7 +325,9 @@
                 <div class="">
                     <div class='licensasecertificados-item-title'><b>Curso Laravel 6.x</b></div>
                     <div>Especializa TI</div>
-                    <div class='text-muted fs-6'>Emitido abr de 2021</div>
+                    
+                    <p>Introdução e Organização Laravel, Rotas, Controllers, Views, Request, Banco de Dados, Eloquent ORM,
+                        Autenticação, Middlewares e Gerenciador de Dependências do PHP</p>
                     <a target="_blank" href="https://old.especializati.com.br/certificado/BCRHp6Zc"
                         class="btn btn-outline-secondary rounded my-3"><b>Ver credencial</b></a>
                 </div>
@@ -206,7 +340,7 @@
                 <div class="">
                     <div class='licensasecertificados-item-title'><b>Perícia Forense Computacional</b></div>
                     <div>Unicsul</div>
-                    <div class='text-muted fs-6'>Emitido abr de 2020</div>
+                    <p>Programa de formação continuada com carga horária de 40 horas</p>
                     <a target="_blank"
                         href="https://media-exp1.licdn.com/dms/image/C4E22AQES2_Porg3lww/feedshare-shrink_800/0/1635774535984?e=1638403200&v=beta&t=voPA_CHr4-fzPjUyJXuuGjGr16yYJRtl-lfFFXsLHug"
                         class="btn btn-outline-secondary rounded my-3"><b>Ver credencial</b></a>
@@ -221,18 +355,38 @@
                     <div class='licensasecertificados-item-title'><b>Formação Completa de Laravel Fullstack -
                             <i>cursando</i></b></div>
                     <div>Especializa TI</div>
-                    <div class='text-muted fs-6'>Emitido abr de 2021</div>
+                    <p>Stack do mercado: Laravel + Vue + Flutter, formação
+                        completa. Plataforma SAAS com dois níveis de acesso (ACL) bastante avançados. Dashboard completo.
+                        Ainda conta com uma API Restful com Tests. O famoso Vue uma SPA que consome a API do Laravel e
+                        monta o cardápio de cada restaurante (com a opção de leitura do QrCode para identificação da mesa).
+                        APP completo, com esse APP é possível fazer pedidos, acompanhar o status do pedido, avaliar e muito
+                        mais. Foi utilizado o MOBX e PROVIDER e outros packages.
+                        </p>
+                    
                     <a target="_blank" href="https://www.especializati.com.br/curso-laravel-larafood"
                         class="btn btn-outline-secondary rounded my-3"><b>Ver credencial</b></a>
                 </div>
             </div>
 
-
-
+            <div class="licensasecertificados-item mt-2">
+                <div class="m-3">
+                    <!-- <img src="assets/espctilogo.jpg" alt="Nome Kevin Souza"> -->
+                </div>
+                <div class="">
+                    <div class='licensasecertificados-item-title'><b>Scratch para Professores</b></div>
+                    <div>Kevin Souza - YouTube</div>
+                    <p>Produção de uma série de vídeos ensinando a usar o Scratch em ambiente de sala de aula ou virtual, criar seus projeto e
+                        compreender como as coisas funcionam por debaixo dos panos para se sentir confortável para usar em suas atividades.
+                    </p>
+                    
+                    <a target="_blank" href="https://www.youtube.com/watch?v=7ZpMV0c8dBo&list=PLFzjIdwnQBMzNhgb1I00GG_4QQHChaG02"
+                        class="btn btn-outline-secondary rounded my-3"><b>Ver credencial</b></a>
+                </div>
+            </div>
         </div>
 
-        <div class="sobre border rounded mt-3 p-3">
-            <h3><b>Trabalho voluntário</b></h3>
+        <div class="sobre trabavolunt border rounded mt-3 p-3">
+            <h3 class='titletopic' ><b>Trabalho voluntário</b></h3>
 
             <div class="licensasecertificados-item mt-2">
                 <div class="m-3">
@@ -246,6 +400,8 @@
 
                 </div>
             </div>
+
+            <br class='brSpace-200'>
 
             <div class="licensasecertificados-item mt-2">
                 <div class="m-3">
@@ -263,10 +419,12 @@
             </div>
         </div>
 
-        <div class="sobre border rounded mt-3 p-3">
-            <h3><b>Competências</b></h3>
+        <div class="sobre competencias border rounded mt-3 p-3">
+            <h3 class='titletopic' ><b>Habilidades</b></h3>
 
             <div>
+                <span class="badge rounded-pill bg-secondary">Inglês Básico</span>
+                <span class="badge rounded-pill bg-secondary">Espanhol Básico</span>
                 <span class="badge rounded-pill bg-secondary">PHP</span>
                 <span class="badge rounded-pill bg-secondary">JavaScript</span>
                 <span class="badge rounded-pill bg-secondary">CodeIgniter</span>
@@ -285,6 +443,8 @@
     </div>
     </div>
     <br>
+
+    <p class = 'text-center bg-dark text-white p-3 hideAtPrint'>Site desenvolvimento por Kevin Souza</p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
